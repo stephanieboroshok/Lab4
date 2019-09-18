@@ -5,14 +5,19 @@
 
 username = str(input('Create a new username:'))
 password = str(input('Create a new password:'))
+#user creates UN and PW here
 
 def passwordChecker(usernameAttempt,passwordAttempt):
+    #define function
     if ((usernameAttempt == username) and (passwordAttempt == password)):
         print ('Login successful!')
     else:
-        print ('Login failed.')
+        print ('Login failed. Try again.')
+    #check to see if UN and PW are correct
 
 usernameAttempt = str(input('Enter your username:'))
 passwordAttempt = str(input('Enter your password:'))
+# user enters UN and PW
 
 print (passwordChecker(usernameAttempt,passwordAttempt))
+#call and run the function
